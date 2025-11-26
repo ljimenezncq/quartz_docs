@@ -1,3 +1,15 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+/* Ancho default: seguro para la mayoría de clientes */
+.page {
+  max-width: none;
+}
+
+
+.page > #quartz-body {
+  grid-template:
+    "grid-sidebar-left grid-header grid-sidebar-right"
+    "grid-sidebar-left grid-center grid-sidebar-right"
+    "grid-sidebar-left grid-footer grid-sidebar-right"
+    / 20% auto 320px;
+}
